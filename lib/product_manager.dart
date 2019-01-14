@@ -15,7 +15,8 @@ class ProductManager extends StatefulWidget {
 }
 
 class _ProductManagerState extends State<ProductManager> {
-  List<String> _products = []; //can also be final, becuase we dont assign anything new, we just add to it
+  List<String> _products =
+      []; //can also be final, becuase we dont assign anything new, we just add to it
 
   @override
   void initState() {
@@ -39,7 +40,7 @@ class _ProductManagerState extends State<ProductManager> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
       Container(
         margin: EdgeInsets.all(10.0),
         child: ProductControl(_addProduct),
